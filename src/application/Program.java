@@ -22,11 +22,12 @@ public class Program {
 		System.out.println("\n=== Test 2: seller findByIdDepartment ===");
 		
 		
-		Department department = new Department(2,"Id");
+		Department department = new Department(2,null);
 		List<Seller> list = sellerDao.findByDepartment(department);
 		
 		for(Seller obj : list) {
 			System.out.println(obj);
+		
 		}
 	}
 
