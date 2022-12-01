@@ -37,10 +37,11 @@ public class Program {
 		
 		}
 		
-		System.out.println("\n=== Test 4: seller insert ===");
-		Seller newSeller = new Seller(null, "Flavia", "flavia@gmail", new Date(),10000.0, department);
-		sellerDao.insert(newSeller);
-		System.out.println("Inserted! New id = "+ newSeller.getId());
+//		System.out.println("\n=== Test 4: seller insert ===");
+//		Seller newSeller = new Seller(null, "Lenilson Ribeiro", "lenilson@gmail", new Date(),14000.0, department);
+//		sellerDao.insert(newSeller);
+//		
+//		System.out.println("Inserted! New id = "+ newSeller.getId());
 	
 		
 		System.out.println("\n=== Test 5: seller update ===");
@@ -50,6 +51,11 @@ public class Program {
 		
 		System.out.println("Update complete!");
 	
+		
+		System.out.println("\n=== Test 6: seller delete ===");
+		sellerDao.deleById(23);
+		
+		System.out.println("Delete complete!");
 	}
 	
 
